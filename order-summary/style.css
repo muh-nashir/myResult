@@ -1,0 +1,102 @@
+:root {
+  --primary-color: hsl(225, 100%, 94%);
+  --secondary-color: hsl(245, 75%, 52%);
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--primary-color);
+  background-image: url("asset/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("asset/pattern-background-desktop.svg");
+    background-color: cover;
+  }
+}
+
+.order-summary {
+  margin: 5em auto;
+  font-family: 'Red Hat Display';
+}
+
+.order-summary .card {
+  border-radius: 25px;
+}
+
+.order-summary .card .card-body {
+  text-align: center;
+}
+
+.order-summary .card .card-body .card-title {
+  font-weight: 900;
+  margin: 20px 0;
+  color: #1f2f56;
+}
+
+.order-summary .card .card-body .card-text {
+  font-size: 14px;
+}
+
+.order-summary .card .annual-plan {
+  background-color: #f5f7ff;
+  margin: 25px 0;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.order-summary .card .annual-plan .icon-music {
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.order-summary .card .annual-plan .annual-text {
+  margin-left: 5px;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+.order-summary .card .annual-plan .annual-price {
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.order-summary .card .annual-plan .change {
+  color: #1f2f56;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.order-summary .card .annual-plan .change:hover {
+  color: #3829e0;
+  text-decoration: none;
+}
+
+.order-summary .card .proceed {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.order-summary .card .proceed:hover {
+  background-color: rgba(56, 41, 224, 0.8);
+}
+
+.order-summary .card .cancel {
+  font-weight: 700;
+  color: rgba(31, 47, 86, 0.5);
+}
+
+.order-summary .card .cancel:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=style.css.map */
